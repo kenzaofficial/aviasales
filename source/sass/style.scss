@@ -1,8 +1,40 @@
-$main-bg: #323338;
-$secondary-bg: #232429;
-$input-bg: #28292e;
-$primary-color: #f48c0c;
-$hover-color: #f45202;
-$active-color: #f44400;
-
+@import "variables.scss";
 @import "null.scss";
+@import "fonts.scss";
+@import "bem-blocks.scss";
+@import "filter.scss";
+@import "tickets.scss";
+
+
+
+
+
+
+
+
+.main__container {
+   display: grid;
+   row-gap: 20px;
+
+   @media (min-width: 767px) {
+      grid-template-columns: 1fr 2fr;
+      column-gap: 20px;
+   }
+
+}
+
+
+
+.header__container {
+   padding: 10px 0;
+
+   @media (min-width: 767px) {
+      padding: 35px 0;
+   }
+
+}
+
+.logo__img {
+   display: block;
+   margin: 0 auto;
+}

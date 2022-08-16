@@ -1,0 +1,85 @@
+.button {
+   padding: 15px;
+   font-family: "Open Sans";
+   font-size: 12px;
+   font-weight: 600;
+   line-height: 15px;
+   text-transform: uppercase;
+   cursor: url('../img/hand.svg'), auto;
+   transition: .3s;
+
+   @media (min-width: 767px) {
+      line-height: 20px;
+   }
+}
+
+
+.card {
+   display: flex;
+   flex-flow: column wrap;
+   padding: 10px;
+   @include block-bg;
+
+   @media (min-width: 767px) {
+      padding: 20px;
+   }
+}
+
+.card__header {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.card__price {
+   font-size: 18px;
+   line-height: 18px;
+   color: $blue-color;
+
+   @media (min-width: 767px) {
+      font-size: 24px;
+      line-height: 24px;
+   }
+}
+
+.card__logo {
+   margin-left: auto;
+}
+
+
+
+.card__row {
+   display: flex;
+   column-gap: 15px;
+
+   &:not(:last-child) {
+      margin-bottom: 10px;
+   }
+}
+
+.card__column {
+
+   @media (min-width: 767px) {
+      min-width: 140px;
+      column-gap: 20px;
+   }
+}
+
+.card__column-title {
+   font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 0.5px;
+   color: #A0B0B9;
+
+   @media (min-width: 767px) {
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: uppercase;
+   }
+}
+
+.card__column-value {
+   font-size: 14px;
+   line-height: 21px;
+   letter-spacing: 0px;
+}
