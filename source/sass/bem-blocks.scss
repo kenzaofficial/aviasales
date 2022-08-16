@@ -19,6 +19,7 @@
    flex-flow: column wrap;
    padding: 10px;
    @include block-bg;
+   max-width: 490px;
 
    @media (min-width: 767px) {
       padding: 20px;
@@ -55,13 +56,21 @@
    &:not(:last-child) {
       margin-bottom: 10px;
    }
+
+   @media (min-width: 470px) {
+      column-gap: 70px;
+   }
+
+   @media (min-width: 767px) {
+      column-gap: 20px;
+   }
 }
 
 .card__column {
 
    @media (min-width: 767px) {
       min-width: 140px;
-      column-gap: 20px;
+
    }
 }
 
