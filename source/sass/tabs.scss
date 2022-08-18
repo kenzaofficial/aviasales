@@ -1,0 +1,29 @@
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid #DFE5EC;
+  border-left: 1px solid #DFE5EC;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tabs__button {
+  padding: 10px;
+  border-right: 1px solid #DFE5EC;
+  border-bottom: 1px solid #DFE5EC;
+
+
+  @media (min-width: 767px) {
+    padding: 14px;
+  }
+
+  &:hover {
+    background-color: #DFE5EC;
+    color: $blue-color;
+  }
+
+  &--active {
+    color: #ffffff;
+    background-color: $blue-color;
+  }
+}

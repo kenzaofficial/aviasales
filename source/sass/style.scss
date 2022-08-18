@@ -1,40 +1,11 @@
 @import "variables.scss";
 @import "null.scss";
 @import "fonts.scss";
-@import "bem-blocks.scss";
+@import "button.scss";
+@import "header.scss";
+@import "main.scss";
 @import "filter.scss";
 @import "tickets.scss";
-
-
-
-
-
-
-
-
-.main__container {
-   display: grid;
-   row-gap: 20px;
-
-   @media (min-width: 767px) {
-      grid-template-columns: 1fr 2fr;
-      column-gap: 20px;
-   }
-
-}
-
-
-
-.header__container {
-   padding: 10px 0;
-
-   @media (min-width: 767px) {
-      padding: 35px 0;
-   }
-
-}
-
-.logo__img {
-   display: block;
-   margin: 0 auto;
-}
+@import "tabs.scss";
+@import "cards.scss";
+@import "card.scss";

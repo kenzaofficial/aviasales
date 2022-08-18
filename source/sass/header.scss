@@ -1,0 +1,12 @@
+.header__container {
+  padding: 10px 0;
+
+  @media (min-width: 767px) {
+    padding: 35px 0;
+  }
+}
+
+.header__logo-img {
+  display: block;
+  margin: 0 auto;
+}
