@@ -1,20 +1,215 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+
   <title>aviasales</title>
 </head>
 
 <body>
   <div class="wrapper">
-    12312
     <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__logo">
+          <img src="img/Logo.svg" alt="aviasales logo" class="header__logo-img"></a>
+      </div>
     </header>
     <main class="main">
+      <div class="main__container">
+        <div class="main__filter filter">
+          <h2 class="filter__title">amount of transfers</h2>
+          <ul class="filter__list">
+            <li class="filter__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_1">
+              <label class="checkbox__label" for="checkbox_1">
+                <div class="checkbox__icon"></div> All
+              </label>
+            </li>
+            <li class="filter__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_2">
+              <label class="checkbox__label" for="checkbox_2">
+                <div class="checkbox__icon"></div> No transfers
+              </label>
+            </li>
+            <li class="filter__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_3">
+              <label class="checkbox__label" for="checkbox_3">
+                <div class="checkbox__icon"></div> 1 transfer
+              </label>
+            </li>
+            <li class="filter__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_4">
+              <label class="checkbox__label" for="checkbox_4">
+                <div class="checkbox__icon"></div> 2 transfers
+              </label>
+            </li>
+            <li class="filter__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_5">
+              <label class="checkbox__label" for="checkbox_5">
+                <div class="checkbox__icon"></div> 3 transfers
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="main__tickets tickets">
+          <div class="tickets__tabs tabs">
+            <button class="tabs__button button tabs__button--active" type="button"> the cheapest</button>
+            <button class="tabs__button button " type="button"> the fastest</button>
+            <button class="tabs__button button " type="button"> optimal</button>
+          </div>
+          <ul class="tickets__list cards">
+            <li class="cards__item card">
+              <header class="card__header">
+                <p class="card__price">5100 $</p>
+                <div class="card__logo">
+                  <img src="img/airlanes-logo.png" alt="airlines logo" class="card__logo-img">
+                </div>
+              </header>
+              <div class="card__row">
+                <div class="card__column">
+                  <h3 class="card__column-title">mow - hkt</h3>
+                  <p class="card__column-value">10:45 - 08:00</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">duration</h3>
+                  <p class="card__column-value">21h 15m</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">2 transfers</h3>
+                  <p class="card__column-value">LDN, PRS</p>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__column">
+                  <h3 class="card__column-title">mow - hkt</h3>
+                  <p class="card__column-value">10:20 - 00:50</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">duration</h3>
+                  <p class="card__column-value">13h 30m</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">1 transfer</h3>
+                  <p class="card__column-value">LDN</p>
+                </div>
+              </div>
+            </li>
+            <li class="cards__item card">
+              <div class="card__header">
+                <p class="card__price">3150 $</p>
+                <div class="card__logo">
+                  <img src="img/airlanes-logo.png" alt="airlines logo" class="card__logo-img">
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__column">
+                  <h3 class="card__column-title">mow - hkt</h3>
+                  <p class="card__column-value">10:45 - 08:00</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">duration</h3>
+                  <p class="card__column-value">21h 15m</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">2 transfers</h3>
+                  <p class="card__column-value">LDN, PRS</p>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__column">
+                  <h3 class="card__column-title">mow - hkt</h3>
+                  <p class="card__column-value">10:20 - 00:50</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">duration</h3>
+                  <p class="card__column-value">13h 30m</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">1 transfer</h3>
+                  <p class="card__column-value">BRLN</p>
+                </div>
+              </div>
+            </li>
+            <li class="cards__item card">
+              <header class="card__header">
+                <p class="card__price">100 $</p>
+                <div class="card__logo">
+                  <img src="img/airlanes-logo.png" alt="airlines logo" class="card__logo-img">
+                </div>
+              </header>
+              <div class="card__row">
+                <div class="card__column">
+                  <h3 class="card__column-title">mow - hkt</h3>
+                  <p class="card__column-value">10:45 - 08:00</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">duration</h3>
+                  <p class="card__column-value">21h 15m</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">2 transfers</h3>
+                  <p class="card__column-value">LDN, PRS</p>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__column">
+                  <h3 class="card__column-title">mow - hkt</h3>
+                  <p class="card__column-value">10:20 - 00:50</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">duration</h3>
+                  <p class="card__column-value">13h 30m</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">1 transfer</h3>
+                  <p class="card__column-value">MDR</p>
+                </div>
+              </div>
+            </li>
+            <li class="cards__item card">
+              <header class="card__header">
+                <p class="card__price">300 $</p>
+                <div class="card__logo">
+                  <img src="img/airlanes-logo.png" alt="airlines logo" class="card__logo-img">
+                </div>
+              </header>
+              <div class="card__row">
+                <div class="card__column">
+                  <h3 class="card__column-title">mow - hkt</h3>
+                  <p class="card__column-value">10:45 - 08:00</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">duration</h3>
+                  <p class="card__column-value">21h 15m</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">2 transfers</h3>
+                  <p class="card__column-value">LDN, PRS</p>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__column">
+                  <h3 class="card__column-title">mow - hkt</h3>
+                  <p class="card__column-value">10:20 - 00:50</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">duration</h3>
+                  <p class="card__column-value">13h 30m</p>
+                </div>
+                <div class="card__column">
+                  <h3 class="card__column-title">1 transfer</h3>
+                  <p class="card__column-value">KIV</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="button cards__button"> show five more tickets!</button>
+        </div>
+      </div>
     </main>
     <footer class="footer">
     </footer>

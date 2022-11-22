@@ -31,9 +31,11 @@ body {
   scroll-behavior: smooth;
   height: 100%;
   line-height: 1;
-  font-family: "Futura", sans-serif;
-  font-size: 16px;
-  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: $main-text-color;
+
 }
 
 body {
@@ -47,7 +49,6 @@ body {
 
 button {
   cursor: pointer;
-  color: inherit;
   background-color: inherit;
 }
 
@@ -88,7 +89,7 @@ h6 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: $main-bg;
+  background-color: #F3F7FA;
 }
 
 .main {
@@ -97,6 +98,10 @@ h6 {
 
 [class*="__container"] {
   margin: 0 auto;
-  padding: 0 10px;
-  max-width: 1010px;
+  padding: 0 15px;
+  max-width: 830px;
+
+  @media (min-width: 767px) {
+    padding: 0 40px;
+  }
 }

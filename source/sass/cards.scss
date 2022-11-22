@@ -1,0 +1,13 @@
+.cards__button {
+  margin-top: 20px;
+  width: 100%;
+  color: #ffffff;
+  background-color: $blue-color;
+  border-radius: 5px;
+  max-width: 490px;
+
+  &:hover {
+    background-color: #DFE5EC;
+    color: $main-text-color;
+  }
+}

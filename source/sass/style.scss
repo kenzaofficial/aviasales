@@ -1,8 +1,11 @@
-$main-bg: #323338;
-$secondary-bg: #232429;
-$input-bg: #28292e;
-$primary-color: #f48c0c;
-$hover-color: #f45202;
-$active-color: #f44400;
-
+@import "variables.scss";
 @import "null.scss";
+@import "fonts.scss";
+@import "button.scss";
+@import "header.scss";
+@import "main.scss";
+@import "filter.scss";
+@import "tickets.scss";
+@import "tabs.scss";
+@import "cards.scss";
+@import "card.scss";

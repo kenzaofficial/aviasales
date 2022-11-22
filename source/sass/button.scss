@@ -1,0 +1,14 @@
+.button {
+  padding: 15px;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  text-transform: uppercase;
+  cursor: url('../img/hand.svg'), auto;
+  transition: .3s;
+
+  @media (min-width: 767px) {
+    line-height: 20px;
+  }
+}
